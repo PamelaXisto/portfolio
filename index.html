@@ -33,15 +33,15 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
             </div>
@@ -50,7 +50,7 @@
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                 <div class="txt-topo-site">
@@ -59,7 +59,7 @@
                     <p> Tenho experiência em Python, MySQL, APIs RESTful, JavaScript, HTML5, CSS e Postman, com foco em performance, segurança e boas práticas de desenvolvimento.</p>
                     
                     <div class="btn-contato">
-                        <a href="#">
+                        <a href="#contato">
                             <button>Entre em contato</button>
                         </a>   
                     </div>
@@ -73,7 +73,7 @@
             </div><!-- interface -->
         </section><!-- topo do site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -98,7 +98,7 @@
             </div><!-- interface -->
         </section><!-- especialidades -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -129,7 +129,7 @@
             </div><!-- interface -->
         </section><!-- sobre -->
 
-        <section class="portfolio">
+        <section class="portfolio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
 
@@ -145,29 +145,41 @@
                 <div class="carrossel-cards">
                     <div class="grupo" id="grupo1">
                         <div class="img-port" style="background-image: url(images/api-rick-and-morty.png);">
-                            <div class="overlay">API RestFull do Rick and Morty</div>
+                            <a href="https://github.com/PamelaXisto/RICK_AND_MORTY_API" target="_blank">
+                                <div class="overlay">API RestFull do Rick and Morty</div>
+                            </a>
                         </div>
 
                         <div class="img-port" style="background-image: url(images/sistema-veicular-crud.png);">
-                            <div class="overlay">Sistema Veicular com CRUD</div>
+                            <a href="https://github.com/PamelaXisto/Automocao_Veicular_-CRUD" target="_blank">
+                                <div class="overlay">Sistema Veicular com CRUD</div>
+                            </a>
                         </div>
 
                         <div class="img-port" style="background-image: url(images/biblioteca_unifecaf.png);">
-                            <div class="overlay">Biblioteca Digital UniFECAF</div>
+                            <a href="https://github.com/PamelaXisto/WEBSITE_BIBLIOTECA_UNIFECAF" target="_blank">
+                                <div class="overlay">Biblioteca Digital UniFECAF</div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="grupo" id="grupo2">
                         <div class="img-port" style="background-image: url(images/biblioteca-digital-crud.png);">
-                            <div class="overlay">Biblioteca Digital com CRUD</div>
+                            <a href="https://github.com/PamelaXisto/Biblioteca_Digital" target="_blank">
+                                <div class="overlay">Biblioteca Digital com CRUD</div>
+                            </a>
                         </div>
 
                         <div class="img-port" style="background-image: url(images/serie_supernatural.png);">
-                            <div class="overlay">WebSite Supernatural</div>
+                            <a href="https://github.com/PamelaXisto/WEBSITE_SUPERNATURAL/tree/main" target="_blank">
+                                <div class="overlay">WebSite Supernatural</div>
+                            </a>
                         </div>
 
-                        <div class="img-port" style="background-image: url(images/restaurante_chatbot.png);">
-                            <div class="overlay">Restaurante Xisto Flavor ChatBot</div>
+                        <div class="img-port" style="background-image: url(images/sistema-estoque-usuario-crud.png);">
+                            <a href="https://github.com/PamelaXisto/SISTEMA_DE_ESTOQUE_CRUD" target="_blank">
+                                <div class="overlay">Sistema de Estoque com CRUD</div>
+                            </a>
                         </div>
                     </div>
                 
@@ -178,7 +190,7 @@
     </main>
 
     <footer>
-        <div class="interface">
+        <div class="interface" id="contato">
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
