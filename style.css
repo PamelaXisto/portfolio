@@ -295,24 +295,68 @@ section.portfolio .flex{
 
 /* Carrossel de cards */
 .carrossel-cards {
-  position: relative;
+  /* position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; */
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;  /* espaço para scrollbar */
+  -webkit-overflow-scrolling: touch; /* suaviza o scroll no iOS */
+  
+}
+
+.carrossel-cards::-webkit-scrollbar {
+  height: 8px;           /* altura da barra de rolagem horizontal */
+}
+
+.carrossel-cards::-webkit-scrollbar-track {
+  background: #222;      /* cor do fundo da barra */
+  border-radius: 4px;
+}
+
+.carrossel-cards::-webkit-scrollbar-thumb {
+  background: #ff007f;  /* cor da "pegada" da barra */
+  border-radius: 4px;
 }
 
 .grupo {
-  display: none;
+  /* display: none;
   gap: 70px;
   justify-content: center;
+  flex-wrap: nowrap;
+  animation: fade .4s ease-in-out; */
+  display: flex;
+  gap: 30px;
+  /* Removi display:none e controles, agora só mostra tudo */
   flex-wrap: nowrap;
   animation: fade .4s ease-in-out;
 }
 
-#slide1:checked ~ .controle-carrossel + .carrossel-cards #grupo1,
-#slide2:checked ~ .controle-carrossel + .carrossel-cards #grupo2 {
+/* #slide1:checked ~ .controle-carrossel + .carrossel-cards #grupo1,
+#slide2:checked ~ .controle-carrossel + .carrossel-cards #grupo2,
+#slide3:checked ~ .controle-carrossel + .carrossel-cards #grupo3 {
   display: flex;
+} */
+
+.img-port {
+  flex: 0 0 auto; /* impede que os cards encolham */
+  width: 320px;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: background-position 8s;
+  border: 1px solid #ffffff;
+
 }
 
+.img-port:hover {
+  background-position: center bottom;
+}
 
 /* ESTILO DO RODAPÉ */
 footer{
