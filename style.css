@@ -101,6 +101,7 @@ section.topo-do-site .flex{
     gap: 90px;
 }
 
+
 .topo-do-site h1{
     color: white;
     font-size: 42px;
@@ -173,6 +174,7 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
+
 /* ESTILO DO SOBRE */
 .sobre .img-sobre img {
     width: 600px;
@@ -235,20 +237,18 @@ section.portfolio .flex{
 }
 
 .img-port{
-    flex: 0 0 auto;
-    width: 320px;
+    width: 360px;
     height: 460px;
     background-size: cover;
-    background-position: center;
+    background-position: 100% 0;
+    transition: 8s;
+    cursor: pointer;
     border-radius: 40px;
     position: relative;
-    cursor: pointer;
-    transition: background-position 8s;
-    border: 1px solid #ffffff;
 }
 
 .img-port:hover{
-    background-position: center bottom;
+    background-position: 100% 100%;
 }
 
 .overlay{
@@ -293,34 +293,69 @@ section.portfolio .flex{
   color:#ffffff;
 }
 
+/* Carrossel de cards */
 .carrossel-cards {
+  /* position: relative;
+  width: 100%;
+  overflow: hidden; */
   display: flex;
   gap: 30px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding-bottom: 20px;
-  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;  /* espaço para scrollbar */
+  -webkit-overflow-scrolling: touch; /* suaviza o scroll no iOS */
+  
 }
 
 .carrossel-cards::-webkit-scrollbar {
-  height: 8px;
+  height: 8px;           /* altura da barra de rolagem horizontal */
 }
 
 .carrossel-cards::-webkit-scrollbar-track {
-  background: #222;
+  background: #222;      /* cor do fundo da barra */
   border-radius: 4px;
 }
 
 .carrossel-cards::-webkit-scrollbar-thumb {
-  background: #ff007f;
+  background: #ff007f;  /* cor da "pegada" da barra */
   border-radius: 4px;
 }
 
 .grupo {
+  /* display: none;
+  gap: 70px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  animation: fade .4s ease-in-out; */
   display: flex;
   gap: 30px;
+  /* Removi display:none e controles, agora só mostra tudo */
   flex-wrap: nowrap;
   animation: fade .4s ease-in-out;
+}
+
+/* #slide1:checked ~ .controle-carrossel + .carrossel-cards #grupo1,
+#slide2:checked ~ .controle-carrossel + .carrossel-cards #grupo2,
+#slide3:checked ~ .controle-carrossel + .carrossel-cards #grupo3 {
+  display: flex;
+} */
+
+.img-port {
+  flex: 0 0 auto; /* impede que os cards encolham */
+  width: 320px;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: background-position 8s;
+  border: 1px solid #ffffff;
+
+}
+
+.img-port:hover {
+  background-position: center bottom;
 }
 
 /* ESTILO DO RODAPÉ */
@@ -354,9 +389,10 @@ footer .line-footer p a{
     color: white;
 }
 
+
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1020px){
-    /* GERAIS */
+    /* CLASSES GERAIS */
     .flex{
         flex-direction: column-reverse;
     }
@@ -365,31 +401,44 @@ footer .line-footer p a{
         font-size: 34px;
         line-height: 30px;
     }
+    
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
 
+    
+    /* CABEÇALHO */
     .menu-desktop, .btn-contato{
         display: none;
     }
+
 
     /* TOPO DO SITE */
     .logo img {
         width: 20vh;
     }
 
-    section.topo-do-site{
-        padding: 20px 8%;
-    }
-
     section.topo-do-site .flex{
         gap: 40px;
     }
 
-    .topo-do-site h1{
-        font-size: 30px;
+    section.topo-do-site{
+        padding: 20px 8%;
     }
 
+    .topo-do-site h1{
+        font-size: 30px
+    }
     .topo-do-site .img-topo-site img{
         width: 100%;
     }
+
+
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
 
     /* SOBRE */
     section.sobre{
@@ -410,60 +459,50 @@ footer .line-footer p a{
         width: 100%;
     }
 
-    /* PORTFÓLIO */
-    section.portfolio{
-        padding: 60px 6%;
-    }
-
-    section.portfolio .flex{
-        flex-direction: column;
+    .sobre .img-sobre{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 40px;
+        width: 200px;
+
     }
 
-    .carrossel-cards{
+
+    /* PORTFOLIO */
+    section.portfolio {
+        padding: 40px 5%;
+    }
+
+    section.portfolio .flex {
+        gap: 30px;
+    }
+
+    .grupo {
+        display: flex;
         flex-wrap: wrap;
+        gap: 20px;
         justify-content: center;
-        overflow-x: hidden;
+        align-items: center;
+        margin-bottom: 50px;
     }
 
-    .grupo{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
-    }
-
-    .img-port{
-        flex: 0 0 auto;
+    .img-port {
         width: 90%;
-        max-width: 320px;
-        height: 420px;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 3 / 4;
         background-size: cover;
         background-position: center;
-        border-radius: 30px;
-        position: relative;
-        cursor: pointer;
-        transition: background-position 8s;
-        border: 1px solid #ffffff;
+        border-radius: 20px;
     }
-
-    .overlay{
-        font-size: 18px;
-        border-radius: 30px;
-    }
-
-    .controle-carrossel{
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .btn-seta{
-        display: none;
-    }
-
+    
     /* RODAPÉ */
     .logo-footer img {
         width: 30vh;
+    }
+    
+    .overlay{
+        font-size: 17px;
     }
 
     footer .flex{
@@ -474,7 +513,37 @@ footer .line-footer p a{
     footer .line-footer{
         text-align: center;
     }
+
+    .controle-carrossel {
+        justify-content: center; /* centraliza os botões */
+        gap: 16px;
+        margin-bottom: 15px;
+    }
+
+    .btn-seta {
+        display: none;
+    }
+
+    .carrossel-cards {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .grupo {
+        display: flex; /* importante: ainda mostra o grupo */
+        flex-wrap: wrap; /* permite que quebre para linha de baixo */
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .img-port {
+        width: 90%; /* ocupa quase toda a largura */
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 3 / 6; /* mantém proporção responsiva */
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
 }
-
-
-
