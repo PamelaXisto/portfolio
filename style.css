@@ -469,33 +469,20 @@ footer .line-footer p a{
 
 
     /* PORTFOLIO */
-    section.portfolio {
-        padding: 40px 5%;
+    section.portfolio{
+        padding: 80px 8%;
     }
 
-    section.portfolio .flex {
-        gap: 30px;
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
-    .grupo {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
+    section.portfolio .flex{
+        gap: 60px;
     }
 
-    .img-port {
-        width: 90%;
-        max-width: 300px;
-        height: auto;
-        aspect-ratio: 3 / 4;
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-    }
-    
     /* RODAPÉ */
     .logo-footer img {
         width: 30vh;
