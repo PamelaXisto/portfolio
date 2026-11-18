@@ -39,7 +39,6 @@ Fique à vontade para entrar em contato comigo ou acompanhar meu trabalho:
 
 - **LinkedIn:** [linkedin.com/in/pamelaxisto/](https://www.linkedin.com/in/pamelaxisto/)
 - **E-mail:** pammellaxisto@gmail.com
-- **Discord:** pamela.xs
 
 ---
 Desenvolvido com 💜 por Pâmela Xisto
