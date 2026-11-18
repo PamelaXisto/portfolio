@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pâmela Xisto — Desenvolvedora Back-end & Full Stack</title>
+  <meta name="description" content="Desenvolvedora back-end e full stack. APIs, integrações e sistemas web em Java, PHP/WordPress, Node.js e Python.">
+  <meta name="theme-color" content="#1E2921">
+  <meta property="og:title" content="Pâmela Xisto — Desenvolvedora Back-end & Full Stack">
+  <meta property="og:description" content="APIs, integrações e sistemas web em Java, PHP/WordPress, Node.js e Python.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header" id="topo">
+    <div class="container header__in">
+      <a class="brand" href="#topo" aria-label="Pâmela Xisto — início"><img src="assets/img/logo.png" width="858" height="199" alt="PXS — Pâmela Xisto"></a>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="#atuacao">Atuação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="nav__cta">Contato</a>
+      </nav>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero__in">
+        <div class="hero__txt">
+          <p class="eyebrow">Desenvolvedora Back-end &amp; Full Stack</p>
+          <h1>Sistemas e APIs que funcionam<span class="grad">.</span><br>Em qualquer stack.</h1>
+          <p class="lead">Sou Pâmela. Construo APIs, integrações e aplicações web com Java, PHP/WordPress, Node.js e Python — do banco de dados até a tela.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--ghost" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <img src="assets/img/perfil.jpg" width="913" height="1141" alt="Foto de Pâmela Xisto">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="atuacao" aria-labelledby="t-atuacao">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Atuação</p>
+          <h2 id="t-atuacao">O que eu entrego</h2>
+        </header>
+        <div class="cards3">
+          <article class="info"><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span><h3>APIs e integrações</h3><p>APIs REST seguras e integração entre sistemas e serviços externos, com tratamento de erros, cache e variáveis de ambiente.</p></article>
+          <article class="info"><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span><h3>Aplicações web</h3><p>Portais editoriais em WordPress com blocos Gutenberg e aplicações com back-end próprio e interface em React.</p></article>
+          <article class="info"><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span><h3>Dados e automação</h3><p>Modelagem em MySQL e PostgreSQL, pipelines com Docker e scripts que automatizam tarefas repetitivas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projetos" aria-labelledby="t-projetos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Projetos</p>
+          <h2 id="t-projetos">Trabalhos em produção e estudos</h2>
+          <p class="section__sub">Passe o mouse para rolar a página do projeto. Clique no título (ou deslize para cima no celular) para ver a descrição e as tecnologias.</p>
+        </header>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="chip" data-filter="all" aria-pressed="true">Todos <b></b></button>
+          <button class="chip" data-filter="pro" aria-pressed="false">Profissionais <b></b></button>
+          <button class="chip" data-filter="pessoal" aria-pressed="false">Pessoais <b></b></button>
+        </div>
+        <div class="grid" id="grid" aria-live="polite"></div>
+        <noscript><p class="section__sub">Ative o JavaScript para ver os projetos ou acesse meu <a href="https://github.com/pamelaxisto">GitHub</a>.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section" id="stack" aria-labelledby="t-stack">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Stack</p>
+          <h2 id="t-stack">Ferramentas que eu uso</h2>
+          <p class="section__sub">A linguagem é meio, não fim: escolho a que resolve melhor o problema.</p>
+        </header>
+        <div class="stack">
+          <article class="stack__card">
+            <header><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><h3>Linguagens</h3></header>
+            <ul class="tiles"><li class="tile tile--main"><img src="assets/icons/java.svg" alt="" width="32" height="32" class=""><span>Java</span></li><li class="tile"><img src="assets/icons/php.svg" alt="" width="32" height="32" class=""><span>PHP</span></li><li class="tile"><img src="assets/icons/javascript.svg" alt="" width="32" height="32" class=""><span>JavaScript</span></li><li class="tile"><img src="assets/icons/python.svg" alt="" width="32" height="32" class=""><span>Python</span></li></ul>
+          </article>
+          <article class="stack__card">
+            <header><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><h3>Frameworks e CMS</h3></header>
+            <ul class="tiles"><li class="tile tile--main"><img src="assets/icons/spring.svg" alt="" width="32" height="32" class=""><span>Spring Boot</span></li><li class="tile"><img src="assets/icons/wordpress.svg" alt="" width="32" height="32" class=""><span>WordPress</span></li><li class="tile"><img src="assets/icons/nodejs.svg" alt="" width="32" height="32" class=""><span>Node.js</span></li><li class="tile"><img src="assets/icons/express.svg" alt="" width="32" height="32"><span>Express</span></li><li class="tile"><img src="assets/icons/react.svg" alt="" width="32" height="32" class=""><span>React</span></li></ul>
+          </article>
+          <article class="stack__card">
+            <header><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span><h3>Dados e infra</h3></header>
+            <ul class="tiles"><li class="tile"><img src="assets/icons/mysql.svg" alt="" width="32" height="32" class=""><span>MySQL</span></li><li class="tile"><img src="assets/icons/postgresql.svg" alt="" width="32" height="32" class=""><span>PostgreSQL</span></li><li class="tile"><img src="assets/icons/docker.svg" alt="" width="32" height="32" class=""><span>Docker</span></li></ul>
+          </article>
+          <article class="stack__card">
+            <header><span class="info__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><h3>Ferramentas e práticas</h3></header>
+            <ul class="tiles"><li class="tile"><img src="assets/icons/git.svg" alt="" width="32" height="32" class=""><span>Git</span></li><li class="tile"><img src="assets/icons/maven.svg" alt="" width="32" height="32" class=""><span>Maven</span></li><li class="tile"><img src="assets/icons/gradle.svg" alt="" width="32" height="32"><span>Gradle</span></li><li class="tile"><img src="assets/icons/html5.svg" alt="" width="32" height="32" class=""><span>HTML5</span></li><li class="tile"><img src="assets/icons/css3.svg" alt="" width="32" height="32" class=""><span>CSS3</span></li></ul>
+            <ul class="pills"><li>APIs REST</li><li>Integração de sistemas</li><li>Clean code</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="sobre" aria-labelledby="t-sobre">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">Sobre</p>
+          <h2 id="t-sobre">Prazer, Pâmela.</h2>
+          <figure class="about__fig">
+            <img src="assets/img/evento-google.jpg" width="640" height="800" loading="lazy" alt="Pâmela ao lado de uma escultura do logotipo do Google em um evento">
+            <figcaption>Evento Google</figcaption>
+          </figure>
+        </div>
+        <div class="about__txt">
+          <p>Trabalho com back-end e gosto de ver o sistema inteiro funcionando: regra de negócio, banco de dados, integração entre serviços e a interface que a pessoa usa.</p>
+          <p>Hoje desenvolvo projetos no Grupo Jovem Pan, com PHP e WordPress (Gutenberg) para portais editoriais e Node.js para aplicações de dados, como cotações, Copa e eleições. Minha base é Java com Spring Boot, e também tenho projetos em Python e JavaScript.</p>
+          <p>Busco uma posição remota em que eu possa continuar aprendendo, escrever código limpo e entregar soluções confiáveis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="t-contato">
+      <div class="container contact__in">
+        <div class="contact__info">
+          <p class="eyebrow">Contato</p>
+          <h2 id="t-contato">Vamos conversar?</h2>
+          <p class="section__sub">Conte rapidamente sobre a vaga ou o projeto. Respondo por e-mail, telefone ou LinkedIn, o que for melhor para você.</p>
+          <ul class="channels">
+            <li><a href="mailto:pammellaxisto@gmail.com"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><small>E-mail</small>pammellaxisto@gmail.com</span></a></li>
+            <li><a href="tel:+5511986335706"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span><small>Telefone</small>(11) 98633-5706</span></a></li>
+            <li><a href="https://wa.me/5511986335706" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span><small>WhatsApp</small>Enviar mensagem</span></a></li>
+            <li><a href="https://www.linkedin.com/in/pamelaxisto/" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span><small>LinkedIn</small>/in/pamelaxisto</span></a></li>
+            <li><a href="https://github.com/pamelaxisto" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg><span><small>GitHub</small>/pamelaxisto</span></a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="form" novalidate>
+          <div class="field">
+            <label for="f-nome">Nome</label>
+            <input id="f-nome" name="name" type="text" autocomplete="name" required placeholder="Seu nome">
+          </div>
+          <div class="field">
+            <label for="f-email">E-mail</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="voce@empresa.com">
+          </div>
+          <div class="field">
+            <label for="f-assunto">Assunto</label>
+            <select id="f-assunto" name="subject">
+              <option>Vaga de desenvolvedora</option>
+              <option>Projeto / freelance</option>
+              <option>Outro assunto</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Mensagem</label>
+            <textarea id="f-msg" name="message" rows="5" required minlength="10" placeholder="Como posso ajudar?"></textarea>
+          </div>
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+          <button class="btn btn--primary btn--block" type="submit"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg><span>Enviar mensagem</span></button>
+          <p class="form__status" id="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <span class="footer__brand"><img src="assets/img/monograma.png" width="262" height="199" alt="" loading="lazy"><span>© <span id="ano"></span> Pâmela Xisto</span></span>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
